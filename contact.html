@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - VOC TV Channel</title>
+
+    <!-- Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+        <div class="logo">
+
+            <img src="VOC Logo.png"
+                 alt="VOC TV Channel Logo">
+
+            <a href="index.html">
+                VOC TV CHANNEL - 24 HRS
+            </a>
+
+        </div>
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search..."
+            >
+
+            <button>
+                🔍
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav class="navbar">
+
+    <div class="container">
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="advisory.html">
+                    Advisory Board
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    Media
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                   class="active">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a href="gallery.html">
+                    Gallery
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <h1>
+            Contact Us
+        </h1>
+
+        <p>
+            Get in touch with VOC TV Channel
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT FORM ================= -->
+
+<main class="contact-container">
+
+    <div class="contact-box">
+
+        <h2>
+            Send Us a Message
+        </h2>
+
+        <p class="contact-description">
+            Fill in your details and send us your message.
+        </p>
+
+
+        <!-- NAME -->
+
+        <div class="form-group">
+
+            <label for="name">
+                Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+        </div>
+
+
+
+        <!-- MESSAGE -->
+
+        <div class="form-group">
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                rows="7"
+                placeholder="Enter your message..."
+            ></textarea>
+
+        </div>
+
+
+
+        <!-- BUTTONS -->
+
+        <div class="contact-buttons">
+
+            <button
+                class="email-button"
+                onclick="sendEmail()"
+            >
+                📧 Send via Email
+            </button>
+
+
+            <button
+                class="whatsapp-button"
+                onclick="sendWhatsApp()"
+            >
+                💬 Send via WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- ================= CONTACT DETAILS ================= -->
+
+<section class="contact-details-section">
+
+    <div class="container">
+
+        <div class="contact-details-box">
+
+            <h2>Contact Us</h2>
+
+            <p class="contact-intro">
+                You can reach us through the following contact details.
+            </p>
+
+
+            <!-- ADDRESS -->
+
+            <div class="contact-detail">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div class="contact-info">
+
+                    <h3>Address</h3>
+
+                    <p>
+                        A Ministry of Shaju & Company
+                        Broadcasting Mission
+                    </p>
+
+                    <p>
+                        Northern Bazar,
+                        Kunnamkulam,
+                        Kerala - 680503
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="contact-detail">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div class="contact-info">
+
+                    <h3>Phone</h3>
+
+                    <a href="tel:+919895116051">
+                        +91 9895116051
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-detail">
+
+                <div class="contact-icon">
+                    ✉️
+                </div>
+
+                <div class="contact-info">
+
+                    <h3>Email</h3>
+
+                    <a href="mailto:vocchannel24hrs@gmail.com">
+                        vocchannel24hrs@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="contact-detail">
+
+                <div class="contact-icon">
+                    💬
+                </div>
+
+                <div class="contact-info">
+
+                    <h3>WhatsApp</h3>
+
+                    <a
+                        href="https://wa.me/919895116051"
+                        target="_blank"
+                    >
+                        Chat with us on WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+
+            <h2>
+                VOC TV CHANNEL - 24 HRS
+            </h2>
+
+            <p>
+                സുവിശേഷം അതിവേഗം അനേകരിലേക്ക്.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="advisory.html">
+                Advisory Board
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                📞 +91 9895116051
+            </p>
+
+            <p>
+                ✉️ vocchannel24hrs@gmail.com
+            </p>
+
+            <p>
+                A Ministry of Shaju & Company Broadcasting Mission
+            </p>
+
+            <p>
+                Northern Bazar, Kunnamkulam.
+                PIN - 680503
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 VOC TV Channel - 24 Hrs.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function getFormData() {
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+
+    if (name === "") {
+
+        alert("Please enter your name.");
+
+        return null;
+
+    }
+
+
+    if (message === "") {
+
+        alert("Please enter your message.");
+
+        return null;
+
+    }
+
+
+    return {
+        name: name,
+        message: message
+    };
+
+}
+
+
+
+/* ================= SEND EMAIL ================= */
+
+function sendEmail() {
+
+    const data = getFormData();
+
+    if (!data) {
+        return;
+    }
+
+
+    const email =
+        "vocchannel24hrs@gmail.com";
+
+    const subject =
+        "Contact Message from " + data.name;
+
+    const body =
+        "Name: " + data.name +
+        "\n\nMessage:\n" +
+        data.message;
+
+
+    const mailto =
+        "mailto:" + email +
+        "?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+
+
+    window.location.href = mailto;
+
+}
+
+
+
+/* ================= SEND WHATSAPP ================= */
+
+function sendWhatsApp() {
+
+    const data = getFormData();
+
+    if (!data) {
+        return;
+    }
+
+
+    /*
+       WhatsApp requires the country code.
+
+       9895116051
+       becomes
+       +91 9895116051
+    */
+
+    const phone =
+        "919895116051";
+
+
+    const text =
+        "Hello VOC TV Channel,%0A%0A" +
+        "Name: " +
+        encodeURIComponent(data.name) +
+        "%0A%0A" +
+        "Message:%0A" +
+        encodeURIComponent(data.message);
+
+
+    const whatsappURL =
+        "https://wa.me/" +
+        phone +
+        "?text=" +
+        text;
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+```
