@@ -522,6 +522,38 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+
+    .gallery-container {
+        padding: 25px 15px 50px;
+    }
+
+    .gallery-section {
+        margin-bottom: 35px;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+}
+
 /* ================= DESKTOP SCREEN ================= */
 
 /*
@@ -538,6 +570,46 @@ footer {
 
     .member-photo {
         height: 200px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .advisory-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .member-card {
+        width: 100%;
+    }
+
+    .member-photo {
+        width: 100%;
+        height: 280px;
+    }
+
+    .member-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .member-info {
+        padding: 18px 15px;
+    }
+
+    .member-info h2 {
+        font-size: 19px;
+    }
+
+    .member-info h3 {
+        font-size: 13px;
+    }
+
+    .member-info p {
+        font-size: 13px;
     }
 
 }
