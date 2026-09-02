@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+<html lang="ml">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>യേശുവിനുണ്ടായ മൂന്നു പരീക്ഷകൾ</title>
+
+    <!-- Malayalam Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* ================= GLOBAL ================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: "Noto Sans Malayalam", Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+
+        /* ================= CONTAINER ================= */
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        .logo a {
+            color: #111;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+
+        /* ================= SEARCH ================= */
+
+        .search-box {
+            display: flex;
+            width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1px solid #ccc;
+            border-right: none;
+            outline: none;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .search-box button {
+            width: 45px;
+            border: none;
+            background: #d71920;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+
+        /* ================= NAVIGATION ================= */
+
+        .navbar {
+            background: #111;
+            width: 100%;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 14px 0;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .navbar a:hover {
+            color: #d71920;
+        }
+
+
+        /* ================= FULL NEWS ================= */
+
+        .full-news-container {
+            width: 92%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 0 70px;
+        }
+
+        .full-news {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* ================= CATEGORY ================= */
+
+        .news-category {
+            display: inline-block;
+            color: #d71920;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+
+        /* ================= NEWS TITLE ================= */
+
+        .full-news h1 {
+            font-size: 36px;
+            line-height: 1.5;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+
+        /* ================= DATE ================= */
+
+        .news-date {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================= NEWS IMAGE ================= */
+
+        /* ================= NEWS IMAGE ================= */
+
+.full-news-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 550px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 8px;
+}
+
+
+        /* ================= NEWS CONTENT ================= */
+
+        .full-news-content p {
+            font-size: 17px;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 22px;
+        }
+
+
+        /* ================= BACK BUTTON ================= */
+
+        .back-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #d71920;
+            color: #ffffff;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .back-button:hover {
+            background: #b9151b;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        .footer {
+            background: #111;
+            color: #ffffff;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            padding: 45px 0;
+        }
+
+        .footer h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .footer h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .footer p {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 5px;
+        }
+
+        .copyright {
+            border-top: 1px solid #333;
+            text-align: center;
+            color: #aaa;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 768px) {
+
+            .container {
+                width: 92%;
+            }
+
+            /* Header */
+
+            .header {
+                padding: 12px 0;
+            }
+
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .logo {
+                width: 100%;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .logo img {
+                width: 42px;
+                height: 42px;
+            }
+
+            .logo a {
+                font-size: 18px;
+                line-height: 1.3;
+                text-align: center;
+            }
+
+
+            /* Search */
+
+            .search-box {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .search-box input {
+                min-width: 0;
+            }
+
+
+            /* Navigation */
+
+            .navbar {
+                overflow-x: auto;
+            }
+
+            .navbar ul {
+                width: max-content;
+                gap: 22px;
+                padding: 13px 15px;
+            }
+
+            .navbar a {
+                font-size: 13px;
+                white-space: nowrap;
+            }
+
+
+            /* News */
+
+            .full-news-container {
+                width: 94%;
+                padding: 25px 0 40px;
+            }
+
+            .full-news {
+                padding: 20px 15px;
+                border-radius: 8px;
+            }
+
+            .full-news h1 {
+                font-size: 25px;
+                line-height: 1.5;
+            }
+
+            .news-date {
+                font-size: 12px;
+                margin-bottom: 18px;
+            }
+
+         .full-news-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 0 auto 22px auto;
+}
+
+            .full-news-content p {
+                font-size: 15px;
+                line-height: 1.9;
+                margin-bottom: 18px;
+            }
+
+
+            /* Back Button */
+
+            .back-button {
+                width: 100%;
+                text-align: center;
+            }
+
+
+            /* Footer */
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 35px 0;
+            }
+
+            .footer h2 {
+                font-size: 19px;
+            }
+
+            .footer h3 {
+                font-size: 17px;
+            }
+
+            .footer p {
+                font-size: 13px;
+            }
+
+        }
+
+
+        /* ================= SMALL MOBILE ================= */
+
+        @media (max-width: 450px) {
+
+            .container {
+                width: 94%;
+            }
+
+            .logo img {
+                width: 38px;
+                height: 38px;
+            }
+
+            .logo a {
+                font-size: 16px;
+            }
+
+            .full-news h1 {
+                font-size: 22px;
+            }
+
+            .full-news-content p {
+                font-size: 14px;
+                line-height: 1.9;
+            }
+
+            .full-news-image {
+                max-height: 240px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container header-inner">
+
+            <div class="logo">
+
+                <img
+                    src="VOC Logo.png"
+                    alt="VOC TV Channel Logo"
+                >
+
+                <a href="index.html">
+                    VOC TV CHANNEL - 24 HRS
+                </a>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="വാർത്ത തിരയുക..."
+                >
+
+                <button>
+                    🔍
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="container">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="advisory.html">
+                        Advisory Board
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Media
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= FULL NEWS ================= -->
+
+    <main class="full-news-container">
+
+        <article class="full-news">
+
+
+            <!-- Category -->
+
+            <!-- Title -->
+
+            <h1>
+യേശുവിനുണ്ടായ മൂന്നു പരീക്ഷകൾ            </h1>
+
+
+            <!-- Date -->
+
+            <div class="news-date">
+                സെപ്റ്റംബർ 2, 2026
+            </div>
+
+
+
+            <!-- Full News -->
+
+            <div class="full-news-content">
+
+                <p>
+യേശു യോഹന്നാൻ സ്നാപകനിൽ നിന്നും സ്നാനം ഏറ്റശേഷം പരിശുദ്ധാത്മാവ് നിറഞ്ഞവനായി യോർദ്ദാൻ വിട്ട് മടങ്ങുമ്പോൾ ആത്മാവ് അവനെ മരുഭൂമിയിലേക്ക് കൊണ്ടു പോയി. പരീക്ഷ സ്ഥലം യെഹൂദ്യ മരുഭൂമിയാണെന്നു വിശ്വസിക്കപ്പെടുന്നു. യോഹന്നാൻ സ്‌നാപകൻ തന്റെ ശുശ്രൂഷ ആരംഭിച്ച സ്ഥലമായിരിക്കാം ഇത്. ആദമിനു പരീക്ഷ ഉണ്ടായത് മനോഹരമായ ഏദൻ തോട്ടത്തിലാണെങ്കിൽ യേശു പരീക്ഷിക്കപ്പെട്ടത് ഒരു ശൂന്യ സ്ഥലത്താണ്.
+
+പിശാച് യേശുവിനെ 40 ദിവസം പരീക്ഷിച്ചു കൊണ്ടിരുന്നു. ആ ദിവസങ്ങളിൽ ഒന്നും യേശു ആഹാരം കഴിച്ചിരുന്നില്ല. വിശന്നിരിക്കുന്ന യേശുവിനോട് പിശാച് പറയുന്നു നീ ദൈവപുത്രനെങ്കിൽ ഈ കല്ലിനോട് അപ്പമാകാൻ കല്പ്‌പിക്ക. വിശപ്പ് മാറ്റുക എന്ന ഒരു ആഗ്രഹത്തെ അവസരമാക്കി യേശുവിൻ്റെ പുത്രത്വത്തെ അതിശയം കാണിച്ച് തെളിയിക്കാൻ ആവശ്യപ്പെടുന്നു. യേശു സാത്താനോട് മനുഷ്യൻ അപ്പംകൊണ്ടു മാത്രമല്ല ജീവിക്കുന്നത് എന്നു എഴുതിയിരിക്കുന്നു എന്ന് പറഞ്ഞു. ആവർത്തന പുസ്ത‌ം 8:3 ആണ് ഇവിടെ യേശു ഉദ്ധരിച്ചത്.
+
+പിന്നെ പിശാച് അവനെ മേലോട്ടുകൊണ്ടു പോയി. ലോകത്തിലെ സകലരാജ്യങ്ങളെയും കാണിച്ചു. അതെല്ലാം തന്റേതാണെന്നു അവകാശപ്പെടുന്നു. നീ എന്നെ നമസ്ക്കരിച്ചാൽ അതെല്ലാം നിൻ്റെതാകുമെന്നു പറഞ്ഞു. യേശു സാത്താനെ നമസ്ക്‌കരിക്കണം. സകല അധികാരവും ലഭിക്കാൻ ക്രൂശു കൂടാതെയുള്ള ഒരു എളുപ്പവഴി സാത്താൻ പറഞ്ഞു കൊടുക്കുകയാണ്. ഇതിനു യേശു കൊടുത്ത മറുപടി ഗൗരവമുള്ളതായിരുന്നു. "നിൻ്റെ ദൈവമായ കർത്താവിനെ നമസ്ക്കരിച്ച് അവനെ മാത്രമെ ആരാധിക്കാവു എന്നു എഴുതിയിരിക്കുന്നു. (ആവർത്തന പുസ്‌തകം 6:13)
+
+പിന്നെ സാത്താൻ യേശുവിനെ യെരുശലേം ദേവാലയത്തിന്റെ ഗോപുരത്തിന്മേൽ നിർത്തി. നീ ദൈവപുത്രനെങ്കിൽ താഴോട്ടു ചാടുക, നിന്നെ കാപ്പാൻ ദുതന്മാർ ഉണ്ടല്ലോ എന്നു പറഞ്ഞു. യേശു അവനോട് നിന്റെ ദൈവമായ കർത്താവിനെ പരീക്ഷിക്കരുത് (ആവർത്തനപുസ്തകം 6:16) ൽ എഴുതിയിരിക്കുന്നു എന്നു പറയുന്നു.
+
+കർത്താവിൻ്റെ വിജയം പൂർണ്ണമായിരുന്നു. തന്റെ മനുഷ്യ സ്വഭാവത്തിലും ആത്മീയ ജീവിതത്തിലും തന്നെ ഏല്പിച്ചു ഉത്തരവാദിത്വത്തിൽ അവൻ പരാജയപ്പെട്ടില്ല. ജയാളിയായി.
+
+
+            <!-- Back Button -->
+
+            <a
+                href="index.html"
+                class="back-button"
+            >
+                ← Back to News
+            </a>
+
+
+        </article>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <div>
+
+                <h2>
+                    VOC TV CHANNEL - 24 HRS
+                </h2>
+
+                <p>
+                    A Ministry of Shaju & Company Broadcasting Mission
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📞 +91 9895116051
+                </p>
+
+                <p>
+                    ✉️ vocchannel24hrs@gmail.com
+                </p>
+
+                <p>
+                    Northern Bazar, Kunnamkulam<br>
+                    PIN - 680503
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 VOC TV CHANNEL - 24 HRS.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
