@@ -863,7 +863,7 @@ footer {
 
 }
 
-```css
+
 /* ================= CONTACT DETAILS ================= */
 
 .contact-details-section {
@@ -1036,7 +1036,6 @@ footer {
     }
 
 }
-```
 
 
 
@@ -1249,4 +1248,709 @@ footer {
     }
 
 }
-```
+
+
+
+/* =========================================================
+   GLOBAL MOBILE RESPONSIVE FIXES
+   ========================================================= */
+
+/* Prevent horizontal overflow */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Make all images responsive */
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 92%;
+    }
+
+    /* Header */
+
+    .logo a {
+        font-size: 22px;
+    }
+
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    /* Main news layout */
+
+    .main-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    /* News cards */
+
+    .news-card {
+        grid-template-columns: 220px 1fr;
+    }
+
+
+    /* Advisory */
+
+    .advisory-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    /* Gallery */
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* Contact */
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       GENERAL
+       ----------------------------------------------------- */
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 100%;
+    }
+
+
+    /* -----------------------------------------------------
+       HEADER
+       ----------------------------------------------------- */
+
+    .header {
+        padding: 12px 0;
+    }
+
+    .header-inner {
+        width: 92%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    /* Logo */
+
+    .logo {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+
+        flex-shrink: 0;
+    }
+
+    .logo a {
+        font-size: 18px;
+        line-height: 1.2;
+
+        text-align: center;
+    }
+
+
+    /* Search */
+
+    .search-box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .search-box button {
+        flex-shrink: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       NAVIGATION
+       ----------------------------------------------------- */
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar .container {
+        width: 100%;
+    }
+
+    .navbar ul {
+
+        display: flex;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+
+        gap: 22px;
+
+        padding: 13px 15px;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navbar ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navbar li {
+        flex-shrink: 0;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       PAGE HEADER
+       ----------------------------------------------------- */
+
+    .page-header {
+        padding: 28px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .page-header p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+    /* -----------------------------------------------------
+       SOCIAL SECTION
+       ----------------------------------------------------- */
+
+    .social-section {
+        padding: 15px 0;
+    }
+
+    .social-links {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+    }
+
+    .social-links a {
+        font-size: 12px;
+        padding: 7px 11px;
+    }
+
+
+    /* -----------------------------------------------------
+       MAIN CONTENT
+       ----------------------------------------------------- */
+
+    .main-layout {
+
+        display: block;
+
+        padding-top: 25px;
+
+        padding-bottom: 35px;
+    }
+
+
+    /* -----------------------------------------------------
+       NEWS CARDS
+       ----------------------------------------------------- */
+
+    .news-card {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 10px;
+
+        margin-bottom: 20px;
+    }
+
+    .news-card img {
+
+        width: 100%;
+
+        height: 200px;
+
+        object-fit: cover;
+
+        display: block;
+
+        margin-bottom: 15px;
+    }
+
+    .news-content {
+        width: 100%;
+    }
+
+    .news-content h2 {
+
+        font-size: 19px;
+
+        line-height: 1.5;
+    }
+
+    .news-content p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    /* -----------------------------------------------------
+       SIDEBAR
+       ----------------------------------------------------- */
+
+    .sidebar {
+
+        width: 100%;
+
+        margin-top: 25px;
+    }
+
+    .sidebar-box {
+
+        width: 100%;
+
+        padding: 18px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* -----------------------------------------------------
+       ADVISORY BOARD
+       ----------------------------------------------------- */
+
+    .advisory-container {
+
+        width: 92%;
+
+        padding-top: 25px;
+
+        padding-bottom: 40px;
+    }
+
+    .advisory-grid {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .member-card {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+    .member-photo {
+
+        width: 100%;
+
+        height: 280px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        background: #f5f5f5;
+
+        overflow: hidden;
+    }
+
+    .member-photo img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: contain;
+
+        display: block;
+    }
+
+    .member-info {
+
+        padding: 16px;
+    }
+
+    .member-info h2 {
+
+        font-size: 19px;
+
+        line-height: 1.4;
+    }
+
+    .member-info h3 {
+
+        font-size: 13px;
+
+        margin-bottom: 8px;
+    }
+
+    .member-info p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    /* -----------------------------------------------------
+       GALLERY
+       ----------------------------------------------------- */
+
+    .gallery-container {
+
+        width: 92%;
+
+        padding: 25px 0 45px;
+    }
+
+    .gallery-section {
+
+        margin-bottom: 35px;
+    }
+
+    .gallery-heading {
+
+        margin-bottom: 15px;
+
+        gap: 10px;
+    }
+
+    .gallery-heading h2 {
+
+        font-size: 20px;
+
+        white-space: nowrap;
+    }
+
+    .gallery-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .gallery-item {
+
+        width: 100%;
+
+        height: 150px;
+
+        border-radius: 6px;
+
+        overflow: hidden;
+    }
+
+    .gallery-item img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        display: block;
+    }
+
+
+    /* -----------------------------------------------------
+       CONTACT
+       ----------------------------------------------------- */
+
+    .contact-container {
+
+        width: 100%;
+
+        padding: 30px 15px 50px;
+    }
+
+    .contact-layout {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .contact-box,
+    .contact-details {
+
+        width: 100%;
+
+        padding: 22px 18px;
+
+        border-radius: 8px;
+    }
+
+    .contact-box h2,
+    .contact-details h2 {
+
+        font-size: 23px;
+
+        line-height: 1.4;
+    }
+
+    .contact-description,
+    .contact-details-intro {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+    .form-group input,
+    .form-group textarea {
+
+        width: 100%;
+
+        font-size: 14px;
+    }
+
+    .contact-buttons {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .contact-buttons button {
+
+        width: 100%;
+
+        min-height: 45px;
+    }
+
+
+    /* -----------------------------------------------------
+       CONTACT DETAILS
+       ----------------------------------------------------- */
+
+    .contact-detail {
+
+        gap: 12px;
+
+        padding: 15px 0;
+    }
+
+    .contact-icon {
+
+        width: 40px;
+
+        height: 40px;
+
+        min-width: 40px;
+
+        font-size: 17px;
+    }
+
+    .contact-info h3 {
+
+        font-size: 15px;
+    }
+
+    .contact-info p,
+    .contact-info a {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        word-break: break-word;
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+       ----------------------------------------------------- */
+
+    .footer-content {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 35px 0;
+    }
+
+    .footer-content h2 {
+
+        font-size: 20px;
+
+        line-height: 1.4;
+    }
+
+    .footer-content h3 {
+
+        font-size: 17px;
+    }
+
+    .footer-content p,
+    .footer-content a {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+    .copyright {
+
+        font-size: 12px;
+
+        line-height: 1.5;
+
+        padding: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .container {
+        width: 94%;
+    }
+
+
+    /* Logo */
+
+    .logo a {
+
+        font-size: 16px;
+    }
+
+    .logo img {
+
+        width: 38px;
+
+        height: 38px;
+    }
+
+
+    /* Gallery */
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+    .gallery-item {
+
+        height: 130px;
+    }
+
+
+    /* Advisory */
+
+    .member-photo {
+
+        height: 240px;
+    }
+
+
+    /* News */
+
+    .news-card img {
+
+        height: 180px;
+    }
+
+
+    /* Page heading */
+
+    .page-header h1 {
+
+        font-size: 24px;
+    }
+
+}
