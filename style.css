@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Rimna";
+    src: url("fonts/MLU-Indulekha\ Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +12,12 @@
 }
 
 body {
-    .logo-text p {
-    font-family: "Sherin", "Noto Sans Malayalam", sans-serif;
+    font-family: "Noto Sans Malayalam", sans-serif;
 }
-    background: #f5f5f5;
-    color: #222;
+
+.malayalam {
+    font-family: "Rimna", sans-serif;
+    font-size: 20px;
 }
 
 a {
@@ -67,8 +75,8 @@ a {
 
 .logo-text p {
     margin: 6px 0 0;
-    font-family: "Sherin", "Noto Sans Malayalam", sans-serif;
-    font-size: 16px;
+    font-family: "Rimna", sans-serif;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
     color: #666;
