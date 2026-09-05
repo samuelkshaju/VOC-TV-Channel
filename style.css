@@ -100,129 +100,52 @@ a {
 }
 
 /* =========================
-   TWO ADS BELOW NAVIGATION
+   SINGLE ADVERTISEMENT
 ========================= */
 
-.ads-section {
+.ad-section {
     width: 100%;
     background: #f5f5f5;
-    padding: 12px 0;
+    padding: 15px;
 }
 
-.ads-container {
+.single-ad {
+    display: block;
     width: 92%;
     max-width: 1400px;
     margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    text-align: center;
 }
 
-.ad-box {
-    display: block;
+.single-ad img {
     width: 100%;
-    overflow: hidden;
-}
-
-.ad-box img {
-    width: 100%;
-    height: 180px;
+    height: auto;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
+    margin: 0 auto;
     border-radius: 4px;
 }
 
 
 /* =========================
-   TABLET
-========================= */
-
-@media (max-width: 900px) {
-
-    .ads-container {
-        width: 94%;
-        gap: 10px;
-    }
-
-    .ad-box img {
-        height: 130px;
-    }
-}
-
-
-/* =========================
-   MOBILE PHONES
+   MOBILE
 ========================= */
 
 @media (max-width: 768px) {
 
-    .ads-section {
-        padding: 8px 0;
+    .ad-section {
+        padding: 10px;
     }
 
-    .ads-container {
-        width: 94%;
-        grid-template-columns: 1fr 1fr;
-        gap: 6px;
-    }
-
-    .ad-box {
+    .single-ad {
         width: 100%;
     }
 
-    .ad-box img {
+    .single-ad img {
         width: 100%;
-        height: 85px;
-        object-fit: cover;
-        border-radius: 3px;
+        height: auto;
     }
 }
-
-
-/* =========================
-   SMALL MOBILE PHONES
-========================= */
-
-@media (max-width: 450px) {
-
-    .ads-container {
-        width: 96%;
-        gap: 5px;
-    }
-
-    .ad-box img {
-        height: 70px;
-    }
-}
-
-/* ================= BREAKING ================= */
-
-.breaking {
-    background: #d71920;
-    color: white;
-}
-
-.breaking-inner {
-    display: flex;
-    align-items: center;
-}
-
-.breaking-title {
-    background: #111;
-    padding: 13px 20px;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.ticker {
-    padding-left: 20px;
-}
-
-.ticker p {
-    white-space: nowrap;
-}
-
 
 /* ================= SOCIAL ================= */
 
