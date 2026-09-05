@@ -106,7 +106,7 @@ a {
 .ads-section {
     width: 100%;
     background: #f5f5f5;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .ads-container {
@@ -116,7 +116,7 @@ a {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 12px;
 }
 
 .ad-box {
@@ -135,22 +135,65 @@ a {
 
 
 /* =========================
-   MOBILE
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .ads-container {
+        width: 94%;
+        gap: 10px;
+    }
+
+    .ad-box img {
+        height: 130px;
+    }
+}
+
+
+/* =========================
+   MOBILE PHONES
 ========================= */
 
 @media (max-width: 768px) {
 
+    .ads-section {
+        padding: 8px 0;
+    }
+
     .ads-container {
         width: 94%;
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
+        gap: 6px;
+    }
+
+    .ad-box {
+        width: 100%;
     }
 
     .ad-box img {
-        height: 100px;
+        width: 100%;
+        height: 85px;
+        object-fit: cover;
         border-radius: 3px;
     }
+}
 
+
+/* =========================
+   SMALL MOBILE PHONES
+========================= */
+
+@media (max-width: 450px) {
+
+    .ads-container {
+        width: 96%;
+        gap: 5px;
+    }
+
+    .ad-box img {
+        height: 70px;
+    }
 }
 
 /* ================= BREAKING ================= */
