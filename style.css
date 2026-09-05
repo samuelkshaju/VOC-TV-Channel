@@ -17,7 +17,7 @@ body {
 
 .malayalam {
     font-family: "Rimna", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 a {
@@ -67,7 +67,7 @@ a {
 
 .logo-text a {
     display: block;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 800;
     letter-spacing: 1px;
     line-height: 1.2;
