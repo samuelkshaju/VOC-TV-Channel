@@ -2039,3 +2039,157 @@ img {
     }
 
 }
+
+
+/* ================= MEDIA PAGE ================= */
+
+.media-page {
+    padding: 60px 0 80px;
+}
+
+.media-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.media-heading h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.media-heading .malayalam {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.media-heading p:last-child {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* ================= SOCIAL MEDIA GRID ================= */
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ================= SOCIAL CARD ================= */
+
+.social-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.14);
+}
+
+
+/* ================= ICON ================= */
+
+.social-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #111;
+    color: white;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* ================= TEXT ================= */
+
+.social-card h2 {
+    margin: 0 0 12px;
+    font-size: 24px;
+}
+
+.social-card p {
+    color: #666;
+    line-height: 1.6;
+    min-height: 52px;
+    margin-bottom: 22px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.social-button {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    background: #111;
+    color: white;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    background: #333;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .media-page {
+        padding: 40px 0 60px;
+    }
+
+    .media-heading h1 {
+        font-size: 30px;
+    }
+
+    .media-heading .malayalam {
+        font-size: 18px;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .social-card {
+        padding: 30px 20px;
+    }
+
+}
+
