@@ -2193,3 +2193,387 @@ img {
 
 }
 
+/* =====================================================
+   DONATE PAGE
+===================================================== */
+
+.donate-page {
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.donate-hero {
+    background: #1b3a57;
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.donate-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.donate-hero h1 {
+    margin: 0;
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.donate-hero h2 {
+    margin: 5px 0 25px;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.donate-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   QUOTE
+===================================================== */
+
+.donate-quote-section {
+    padding: 60px 20px;
+    background: #f5f7f9;
+}
+
+.donate-quote {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.donate-quote p {
+    margin: 0 0 18px;
+    font-size: 26px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #333333;
+}
+
+.donate-quote span {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1b3a57;
+}
+
+
+/* =====================================================
+   VOC FAMILY
+===================================================== */
+
+.donate-family {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.donate-family .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.donate-family h2 {
+    margin-bottom: 25px;
+    font-size: 34px;
+    color: #1b3a57;
+}
+
+.donate-family p {
+    margin: 0 auto 18px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+.donate-family .malayalam {
+    margin-top: 25px;
+    font-size: 21px;
+    color: #1b3a57;
+}
+
+
+/* =====================================================
+   GIVING SECTION
+===================================================== */
+
+.giving-section {
+    padding: 70px 20px;
+    background: #f5f7f9;
+}
+
+.giving-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.giving-section > .container > h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 34px;
+    color: #1b3a57;
+}
+
+.giving-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666666;
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   GIVING CARD
+===================================================== */
+
+.giving-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.giving-card h3 {
+    margin: 0 0 25px;
+    font-size: 25px;
+    color: #1b3a57;
+    text-align: center;
+}
+
+.bank-details {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.bank-details p {
+    margin: 0;
+    padding: 13px 0;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 16px;
+    color: #444444;
+}
+
+.bank-details p:last-child {
+    border-bottom: none;
+}
+
+.bank-details strong {
+    display: inline-block;
+    min-width: 180px;
+    color: #222222;
+}
+
+
+/* =====================================================
+   UPI
+===================================================== */
+
+.upi-card {
+    text-align: center;
+}
+
+.upi-card p {
+    color: #666666;
+}
+
+.upi-id {
+    display: inline-block;
+    margin: 15px 0 25px;
+    padding: 14px 25px;
+    background: #f1f3f5;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1b3a57;
+}
+
+
+/* =====================================================
+   DONATE BUTTON
+===================================================== */
+
+.donate-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #d89b32;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.donate-button:hover {
+    background: #b77e20;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.donate-contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.donate-contact .container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.donate-contact h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #1b3a57;
+}
+
+.donate-contact p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555555;
+}
+
+
+/* =====================================================
+   FINAL CTA
+===================================================== */
+
+.donate-cta {
+    padding: 70px 20px;
+    text-align: center;
+    background: #1b3a57;
+    color: #ffffff;
+}
+
+.donate-cta h2 {
+    margin: 0 0 15px;
+    font-size: 35px;
+}
+
+.donate-cta p {
+    margin: 10px 0 20px;
+    font-size: 17px;
+}
+
+.donate-cta .malayalam {
+    font-size: 22px;
+}
+
+.donate-button-large {
+    margin-top: 10px;
+    padding: 15px 35px;
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .donate-hero {
+        padding: 55px 15px;
+    }
+
+    .donate-hero h1 {
+        font-size: 42px;
+    }
+
+    .donate-hero h2 {
+        font-size: 30px;
+    }
+
+    .donate-hero p {
+        font-size: 16px;
+    }
+
+    .donate-quote-section {
+        padding: 45px 15px;
+    }
+
+    .donate-quote p {
+        font-size: 21px;
+    }
+
+    .donate-family {
+        padding: 50px 15px;
+    }
+
+    .donate-family h2 {
+        font-size: 28px;
+    }
+
+    .giving-section {
+        padding: 50px 15px;
+    }
+
+    .giving-card {
+        padding: 25px 20px;
+    }
+
+    .giving-section > .container > h2 {
+        font-size: 28px;
+    }
+
+    .bank-details strong {
+        display: block;
+        min-width: auto;
+        margin-bottom: 5px;
+    }
+
+    .donate-contact {
+        padding: 50px 15px;
+    }
+
+    .donate-cta {
+        padding: 55px 15px;
+    }
+
+    .donate-cta h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .donate-hero h1 {
+        font-size: 34px;
+    }
+
+    .donate-hero h2 {
+        font-size: 25px;
+    }
+
+    .donate-quote p {
+        font-size: 19px;
+    }
+
+    .donate-family .malayalam {
+        font-size: 18px;
+    }
+
+    .giving-card {
+        padding: 20px 15px;
+    }
+
+}
+
