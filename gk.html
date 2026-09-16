@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+<html lang="ml">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>യേശുവിനുണ്ടായ മൂന്നു പരീക്ഷകൾ</title>
+
+    <!-- Malayalam Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+
+        /* ================= GLOBAL ================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: "Noto Sans Malayalam", Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+
+        /* ================= CONTAINER ================= */
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+       
+        /* ================= NAVIGATION ================= */
+
+        .navbar {
+            background: #111;
+            width: 100%;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 14px 0;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .navbar a:hover {
+            color: #d71920;
+        }
+
+
+        /* ================= FULL NEWS ================= */
+
+        .full-news-container {
+            width: 92%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 0 70px;
+        }
+
+        .full-news {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* ================= CATEGORY ================= */
+
+        .news-category {
+            display: inline-block;
+            color: #d71920;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+
+        /* ================= NEWS TITLE ================= */
+
+        .full-news h1 {
+            font-size: 36px;
+            line-height: 1.5;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+
+        /* ================= DATE ================= */
+
+        .news-date {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================= NEWS IMAGE ================= */
+
+        /* ================= NEWS IMAGE ================= */
+
+.full-news-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 550px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 8px;
+}
+
+
+        /* ================= NEWS CONTENT ================= */
+
+        .full-news-content p {
+            font-size: 17px;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 22px;
+        }
+
+
+        /* ================= BACK BUTTON ================= */
+
+        .back-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #d71920;
+            color: #ffffff;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .back-button:hover {
+            background: #b9151b;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        .footer {
+            background: #111;
+            color: #ffffff;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            padding: 45px 0;
+        }
+
+        .footer h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .footer h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .footer p {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 5px;
+        }
+
+        .copyright {
+            border-top: 1px solid #333;
+            text-align: center;
+            color: #aaa;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 768px) {
+
+            .container {
+                width: 92%;
+            }
+
+            /* Header */
+
+            .header {
+                padding: 12px 0;
+            }
+
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .logo {
+                width: 100%;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .logo img {
+                width: 42px;
+                height: 42px;
+            }
+
+            .logo a {
+                font-size: 18px;
+                line-height: 1.3;
+                text-align: center;
+            }
+
+
+            /* Search */
+
+            .search-box {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .search-box input {
+                min-width: 0;
+            }
+
+
+            /* Navigation */
+
+            .navbar {
+                overflow-x: auto;
+            }
+
+            .navbar ul {
+                width: max-content;
+                gap: 22px;
+                padding: 13px 15px;
+            }
+
+            .navbar a {
+                font-size: 13px;
+                white-space: nowrap;
+            }
+
+
+            /* News */
+
+            .full-news-container {
+                width: 94%;
+                padding: 25px 0 40px;
+            }
+
+            .full-news {
+                padding: 20px 15px;
+                border-radius: 8px;
+            }
+
+            .full-news h1 {
+                font-size: 25px;
+                line-height: 1.5;
+            }
+
+            .news-date {
+                font-size: 12px;
+                margin-bottom: 18px;
+            }
+
+         .full-news-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 0 auto 22px auto;
+}
+
+            .full-news-content p {
+                font-size: 15px;
+                line-height: 1.9;
+                margin-bottom: 18px;
+            }
+
+
+            /* Back Button */
+
+            .back-button {
+                width: 100%;
+                text-align: center;
+            }
+
+
+            /* Footer */
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 35px 0;
+            }
+
+            .footer h2 {
+                font-size: 19px;
+            }
+
+            .footer h3 {
+                font-size: 17px;
+            }
+
+            .footer p {
+                font-size: 13px;
+            }
+
+        }
+
+
+        /* ================= SMALL MOBILE ================= */
+
+        @media (max-width: 450px) {
+
+            .container {
+                width: 94%;
+            }
+
+            .logo img {
+                width: 38px;
+                height: 38px;
+            }
+
+            .logo a {
+                font-size: 16px;
+            }
+
+            .full-news h1 {
+                font-size: 22px;
+            }
+
+            .full-news-content p {
+                font-size: 14px;
+                line-height: 1.9;
+            }
+
+            .full-news-image {
+                max-height: 240px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+<header class="header">
+    <a href="index.html">
+    <div class="container header-inner">
+
+        <div class="logo">
+    <img src="VOC Logo.png" alt="logo">
+
+    <div class="logo-text">
+        <a href="index.html">VOC TV CHANNEL - 24 HRS</a>
+
+<p class="malayalam">സുവിശേഷം അതിവേഗം അനേകരിലേക്ക്</p>    </div>
+    </div>
+</div>
+
+        <!-- <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="വാർത്ത തിരയുക..."
+            >
+            <button onclick="searchNews()">🔍</button>
+        </div> -->
+
+    </div>
+
+</header>
+
+
+
+   <!-- ================= NAVIGATION ================= -->
+
+<nav class="navbar">
+
+    <div class="container">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="advisory.html">Advisory Board</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- =========================
+     SINGLE ADVERTISEMENT
+========================= -->
+
+<section class="ad-section">
+
+    <a href="#" class="single-ad" target="_blank">
+        <img
+            src="Images/Tiny Army Site Ad.png"
+            alt="Advertisement"
+        >
+    </a>
+
+</section>
+<section class="ad-section">
+
+    <a href="#" class="single-ad" target="_blank">
+        <img
+            src="Images/Tract Site Ad.png"
+            alt="Advertisement"
+        >
+    </a>
+
+</section>
+
+    <!-- ================= FULL NEWS ================= -->
+
+    <main class="full-news-container">
+
+        <article class="full-news">
+
+
+            <!-- Category -->
+
+            <!-- Title -->
+
+            <h1>
+ജനറൽ നോളജ്            </h1>
+
+
+            <!-- Date -->
+
+            <div class="news-date">
+                സെപ്റ്റംബർ 16, 2026
+            </div>
+
+
+
+            <!-- Full News -->
+
+            <div class="full-news-content">
+
+                <ol>
+    <li>ആരാണ് കനാനിൽ താമസിച്ച ആദ്യ പിതാവ്? - <strong>അബ്രഹാം</strong></li>
+    <li>12 ഗോത്രങ്ങളുടെ പിതാവായ വ്യക്തി - <strong>യാക്കോബ്</strong></li>
+    <li>ആരാണ് എബ്രായരെ ഈജിപ്തിൽ നിന്ന് നയിച്ചത്? - <strong>മോശെ</strong></li>
+    <li>വാഗ്ദത്ത നാടിന്റെ തലസ്ഥാനമായ നഗരം - <strong>ജറുശലേം</strong></li>
+    <li>ആദ്യ ദേവാലയം പണിത രാജാവ് - <strong>ശലോമോൻ</strong></li>
+    <li>യഹൂദരെ ബന്ദികളാക്കിയ സാമ്രാജ്യം - <strong>ബാബിലോൺ</strong></li>
+    <li>1993 ലെ സമാധാന കരാറിന്റെ പേര് - <strong>ഓസ്ലോ കരാർ</strong></li>
+    <li>2023 ൽ യിസ്രായേലിൽ ആക്രമണം നടത്തിയ സംഘടന - <strong>ഹമാസ്</strong></li>
+    <li>ഗോത്രത്തിൽ ചോദ്യം ചെയ്യപ്പെടാത്ത അധികാരമുള്ള നേതാവിന്റെ പദവി - <strong>ഗോത്രപിതാവ്</strong></li>
+    <li>മോശെയോട് മരുഭൂമിയിൽ വെളിപ്പെട്ട ദൈവത്തിന്റെ നാമം - <strong>യഹോവ</strong></li>
+    <li>മോശൈക നിയമങ്ങൾ ഉൾക്കൊള്ളുന്ന എബ്രായ ബൈബിളിലെ ആദ്യത്തെ അഞ്ചു പുസ്തകങ്ങൾ - <strong>ഉൽപത്തി, പുറപ്പാട്, ലേവ്യപുസ്തകം, സംഖ്യാപുസ്തകം, ആവർത്തനം</strong></li>
+    <li>അബ്രഹാമിന് വാഗ്ദത്തമായി നൽകിയ ദേശത്തിന്റെ പേര് - <strong>കനാൻ</strong></li>
+    <li>മെസപ്പൊട്ടോമിയ രാജാവിനെ തോൽപ്പിച്ച ആദ്യ ന്യായാധിപൻ - <strong>ഒത്നിയേൽ</strong></li>
+    <li>സീസെരയെ തോൽപ്പിക്കാൻ ദൈവം എഴുന്നേൽപ്പിച്ച പ്രവാചക സ്ത്രീ - <strong>ദെബോര</strong></li>
+    <li>മിദ്യാന്യരെ തോൽപ്പിച്ച യെരുബ്ബാൽ എന്ന പേരിൽ അറിയപ്പെട്ട ന്യായാധിപൻ - <strong>ഗിദെയോൻ</strong></li>
+    <li>ഫെലിസ്ത്യരിൽ നിന്ന് യിസ്രായേലിനെ സംരക്ഷിച്ച അവസാനത്തെ ന്യായാധിപൻ - <strong>ശിംശോൻ</strong></li>
+    <li>ന്യായാധിപനും പ്രവാചകനുമായ രാജഭരണത്തിന്റെ തുടക്കത്തിൽ പ്രവർത്തിച്ച വ്യക്തി - <strong>ശമുവേൽ</strong></li>
+    <li>പ്രവചന ശുശ്രൂഷയുടെ മാതൃകയായ പഴയനിയമ പ്രവാചകൻ - <strong>മോശെ</strong></li>
+    <li>പ്രവാസത്തിൽ ദൈവം ജനത്തെ ഉയർത്തുമെന്ന് പ്രത്യാശ നൽകിയ പ്രവാചകൻ - <strong>ദാനിയേൽ</strong></li>
+    <li>യിസ്രായേലിലെ ആദ്യ മഹാപുരോഹിതൻ - <strong>അഹരോൻ</strong></li>
+    <li>മഹാപുരോഹിതൻ അതിവിശുദ്ധ സ്ഥലത്ത് പ്രവേശിക്കുന്ന ദിവസം - <strong>മഹാപാപപരിഹാര ദിവസം</strong></li>
+    <li>ദേവാലയത്തിലെ ഗായക ശുശ്രൂഷകൾ നിർവഹിച്ച ഗോത്രവിഭാഗം - <strong>ലേവ്യർ, കോരഹ്, ആസാഫ്</strong></li>
+    <li>10 ഗോത്രങ്ങൾക്കുമേൽ യിസ്രായേൽ രാജാവായ വ്യക്തി - <strong>യെരോബെയാം</strong></li>
+    <li>വിഭജിച്ച യിസ്രായേൽ രാജ്യത്തിന്റെ തലസ്ഥാനം - <strong>ശേഖേം</strong></li>
+    <li>യിസ്രായേൽ ജനം യഹോവയെ വിട്ടപ്പോൾ ആരാധിച്ച കനാന്യ ദൈവം - <strong>ബാൽ</strong></li>
+</ol>
+
+
+            <!-- Back Button -->
+
+            <a
+                href="index.html"
+                class="back-button"
+            >
+                ← Back to News
+            </a>
+
+
+        </article>
+
+    </main>
+
+<section class="ad-section">
+
+    <a href="#" class="single-ad" target="_blank">
+        <img
+            src="Images/Expo 2027 Site Ad.png"
+            alt="Advertisement"
+        >
+    </a>
+
+</section>
+
+<section class="ad-section">
+
+    <a href="#" class="single-ad" target="_blank">
+        <img
+            src="Images/LT MA Site Ad.png"
+            alt="Advertisement"
+        >
+    </a>
+
+</section>
+
+   <!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+
+            <h2>VOC TV CHANNEL - 24 HRS</h2>
+
+            <p class="malayalam">
+                സുവിശേഷം അതിവേഗം അനേകരിലേക്ക്
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Disclaimer</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>📞 +91 9895116051</p>
+
+            <p>vocchannel24hrs@gmail.com</p>
+
+            <p>A Ministry of Shaju & Company Broadcasting Mission</p>
+            <p>Northern Bazar, Kunnamkulam. PIN - 680503</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 VOC TV Channel - 24 Hrs. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>
+```
